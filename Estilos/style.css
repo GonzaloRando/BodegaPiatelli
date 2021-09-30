@@ -1,19 +1,5 @@
 @charset "UTF-8";
 /* Index */
-.s1 {
-  color: #1f1f1f;
-  font-family: 'Great Vibes', cursive;
-  font-weight: 50px;
-  font-size: 1.5em;
-  margin-left: 5rem;
-  margin-top: 2rem; }
-
-.s2 {
-  color: #6B3442;
-  font-family: 'Great Vibes', cursive;
-  font-weight: 1px;
-  font-size: 1em; }
-
 h2 {
   color: #6B3442;
   font-family: 'Saira Condensed', sans-serif;
@@ -203,6 +189,11 @@ img {
   .caracVinos {
     grid-template-columns: repeat(4, 1fr); } }
 
+/* @media only screen and (max-width:420px){
+    .vinos {
+
+    }
+} */
 h3 {
   font-size: 3rem; }
 
@@ -238,7 +229,8 @@ body {
   transition: opacity 1.5s; }
 
 .navbar-brand {
-  width: 50px; }
+  width: 100px;
+  background-color: transparent; }
 
 .loguito {
   width: 100%; }
