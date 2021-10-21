@@ -12,11 +12,7 @@ $negrosmoke: #1f1f1f;
 $blancosmoke:#f8f9fa;
 $doradosmoke: #9E9E5E;
 
-@for $i from 3 through 1 {
-  h#{$i} {
-    font-size: $i * 1rem;
-  }
-}
+
 
 
 * {
@@ -27,10 +23,10 @@ li{
   text-decoration: none;
 }
 
-h2 {
+h1 {
   color: $vino;
   font-family: 'Saira Condensed', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bolder;
   text-align: center; }
   

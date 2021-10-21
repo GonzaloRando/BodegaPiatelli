@@ -18,7 +18,8 @@ $doradosmoke: #9E9E5E;
   
   .cartas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     margin-top: 2rem;
     width: 100%;
@@ -28,7 +29,7 @@ $doradosmoke: #9E9E5E;
   .cartasContenedor_uno{
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    align-items: center;
     width: 50%;
     padding: 2rem;
   }
@@ -36,7 +37,7 @@ $doradosmoke: #9E9E5E;
   .cartasContenedor_dos{
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    align-items: center;
     width: 50%;
     padding: 2rem;
   }
@@ -46,6 +47,7 @@ $doradosmoke: #9E9E5E;
     justify-content: center;
     margin-top: 2rem;
     color: $doradosmoke;
+    font-size: larger;
   }
   
   .cartas_texto{
@@ -59,6 +61,10 @@ $doradosmoke: #9E9E5E;
     background-color: $vino;
     color: $blancosmoke;
     text-decoration: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .botonCartas:hover{
@@ -66,27 +72,28 @@ $doradosmoke: #9E9E5E;
     background-color: $doradosmoke;
   }
   
-  .seccionDos {
+  .seccionAmbas {
     display: flex;
-    border-width: 10px;
+    flex-direction: column;
+    align-items: center;
     max-width: 100%; }
   
   .sobreNosotros {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     font-family: 'Saira Condensed', sans-serif; }
   
   .texto {
-    flex-wrap: wrap;
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-weight: bolder;
-    font-size: 1.5em; }
+    font-size: 2.5em; }
   
   .textoPortfolio {
+    display: flex;
     flex-direction: column;
-    margin-right: 10px;
     text-align: center;
     border: 2px solid;
     border-color: $vino;

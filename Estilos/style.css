@@ -9,7 +9,8 @@ h2 {
 
 .cartas {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
   width: 100%;
@@ -18,14 +19,14 @@ h2 {
 .cartasContenedor_uno {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  align-items: center;
   width: 50%;
   padding: 2rem; }
 
 .cartasContenedor_dos {
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  align-items: center;
   width: 50%;
   padding: 2rem; }
 
@@ -33,7 +34,8 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  color: #9E9E5E; }
+  color: #9E9E5E;
+  font-size: larger; }
 
 .cartas_texto {
   display: flex;
@@ -43,33 +45,38 @@ h2 {
 .botonCartas {
   background-color: #6B3442;
   color: #f8f9fa;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .botonCartas:hover {
   color: #f8f9fa;
   background-color: #9E9E5E; }
 
-.seccionDos {
+.seccionAmbas {
   display: flex;
-  border-width: 10px;
+  flex-direction: column;
+  align-items: center;
   max-width: 100%; }
 
 .sobreNosotros {
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px;
-  width: 40%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   font-family: 'Saira Condensed', sans-serif; }
 
 .texto {
-  flex-wrap: wrap;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-weight: bolder;
-  font-size: 1.5em; }
+  font-size: 2.5em; }
 
 .textoPortfolio {
+  display: flex;
   flex-direction: column;
-  margin-right: 10px;
   text-align: center;
   border: 2px solid;
   border-color: #6B3442;
@@ -103,29 +110,33 @@ h2 {
 /* Página Bodegas */
 .mapasBodegas {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   padding: 1em; }
 
 .mapasBodegas_salta {
   display: flex;
   flex-direction: column;
-  justify-content: left; }
+  align-items: center; }
 
 .mapasBodegas_mendoza {
   display: flex;
   flex-direction: column;
-  align-items: right; }
+  align-items: center; }
 
-img {
-  max-width: 100%; }
-
+/*   img {
+    max-width: 100%; } */
 .carousel {
-  width: 70%;
+  width: 80%;
   height: 25%;
-  display: flex;
-  justify-content: center; }
+  margin: 10%; }
 
+/* .carousel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
 .contenedorCar {
   display: flex;
   justify-content: center; }
@@ -194,15 +205,6 @@ img {
 
     }
 } */
-h3 {
-  font-size: 3rem; }
-
-h2 {
-  font-size: 2rem; }
-
-h1 {
-  font-size: 1rem; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -210,10 +212,10 @@ h1 {
 li {
   text-decoration: none; }
 
-h2 {
+h1 {
   color: #6B3442;
   font-family: 'Saira Condensed', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bolder;
   text-align: center; }
 
