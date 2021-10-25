@@ -83,6 +83,12 @@ h2 {
   font-family: 'Saira Condensed', sans-serif;
   font-size: larger; }
 
+.imagenMendoza {
+  width: 100%; }
+
+.imagenSalta {
+  width: 100%; }
+
 /* Responsive */
 @media only screen and (min-width: 1024px) {
   .caracVinos {
@@ -172,7 +178,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   background: #f1f1f1;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  width: 100%; }
+
+.parrafo_familia {
+  padding: 2px; }
 
 .familiaPiat h3 {
   display: flex;

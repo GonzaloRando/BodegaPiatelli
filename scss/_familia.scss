@@ -18,8 +18,13 @@ $doradosmoke: #9E9E5E;
     flex-direction: column;
     align-items: center;
     background: #f1f1f1;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+  width: 100%;
+}
   
+.parrafo_familia{
+  padding: 2px;
+}
   .familiaPiat h3 {
     display: flex;
     flex-direction: column;
@@ -28,7 +33,8 @@ $doradosmoke: #9E9E5E;
     color: #6B3442; }
   
   .familiaPiat img {
-    height: 400px; }
+    height: 400px;
+  }
   
   .familiaPiat > div {
     padding: 2rem; }
