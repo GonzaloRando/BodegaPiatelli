@@ -15,8 +15,6 @@ $doradosmoke: #9E9E5E;
     .caracVinos {
         grid-template-columns: repeat(4, 1fr); } }
 
-/* @media only screen and (max-width:420px){
-    .vinos {
-
-    }
-} */
+@media only screen and (min-width: 768px) {
+    .vinos_portfolio {
+        grid-template-columns: repeat(4, 1fr); } }

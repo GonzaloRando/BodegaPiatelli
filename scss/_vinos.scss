@@ -1,3 +1,5 @@
+@import "responsive";
+
 // Variables
 $vino:#6B3442;
 $negrosmoke: #1f1f1f;
@@ -14,19 +16,32 @@ $doradosmoke: #9E9E5E;
   padding: 0 2rem; }
 
 .vinos_portfolio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: $blancosmoke;
   margin-bottom: 2rem; }
 
-.vinos_portfolio h3 {
-  margin-bottom: 2rem;
-  color: $vino; }
+.imagenPortfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
 
-.vinos_portfolio  img {
-  height: 400px; }
+.titulo_portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $vino;
+}
 
-.vinos_portfolio  > div {
-  padding: 2rem; }
+.texto_vinos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $negrosmoke;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1em;
 
+}

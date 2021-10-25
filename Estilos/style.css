@@ -83,6 +83,19 @@ h2 {
   font-family: 'Saira Condensed', sans-serif;
   font-size: larger; }
 
+/* Responsive */
+@media only screen and (min-width: 1024px) {
+  .caracVinos {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media only screen and (min-width: 768px) {
+  .caracVinos {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media only screen and (min-width: 768px) {
+  .vinos_portfolio {
+    grid-template-columns: repeat(4, 1fr); } }
+
 /* Página Vinos */
 .vinos {
   max-width: 1100px;
@@ -91,21 +104,31 @@ h2 {
   padding: 0 2rem; }
 
 .vinos_portfolio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #f8f9fa;
   margin-bottom: 2rem; }
 
-.vinos_portfolio h3 {
-  margin-bottom: 2rem;
+.imagenPortfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; }
+
+.titulo_portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #6B3442; }
 
-.vinos_portfolio img {
-  height: 400px; }
-
-.vinos_portfolio > div {
-  padding: 2rem; }
+.texto_vinos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1f1f1f;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1em; }
 
 /* Página Bodegas */
 .mapasBodegas {
@@ -125,21 +148,17 @@ h2 {
   flex-direction: column;
   align-items: center; }
 
-/*   img {
-    max-width: 100%; } */
+.parrafoCarousel {
+  color: #9E9E5E; }
+
+.contenedorCar {
+  display: flex;
+  justify-content: center; }
+
 .carousel {
   width: 80%;
   height: 25%;
   margin: 10%; }
-
-/* .carousel{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
-.contenedorCar {
-  display: flex;
-  justify-content: center; }
 
 /* Familia */
 .container {
@@ -149,13 +168,16 @@ h2 {
   padding: 0 2rem; }
 
 .familiaPiat {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #f1f1f1;
   margin-bottom: 2rem; }
 
 .familiaPiat h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 2rem;
   color: #6B3442; }
 
@@ -165,9 +187,8 @@ h2 {
 .familiaPiat > div {
   padding: 2rem; }
 
-.familiaPiat:nth-child(even) img {
-  order: 2; }
-
+/*   .familiaPiat:nth-child(even) img {
+    order: 2; } */
 /* Formulario */
 .formulario {
   width: 95%;
@@ -200,11 +221,10 @@ h2 {
   .caracVinos {
     grid-template-columns: repeat(4, 1fr); } }
 
-/* @media only screen and (max-width:420px){
-    .vinos {
+@media only screen and (min-width: 768px) {
+  .vinos_portfolio {
+    grid-template-columns: repeat(4, 1fr); } }
 
-    }
-} */
 * {
   margin: 0;
   padding: 0; }
@@ -245,9 +265,7 @@ body {
 footer {
   display: flex;
   flex-direction: row;
-  text-align: end;
-  text-orientation: sideways-right;
-  display: inline-block;
+  align-items: center;
   max-width: 100%;
   height: 100%; }
 

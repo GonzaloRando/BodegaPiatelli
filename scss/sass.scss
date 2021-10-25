@@ -1,7 +1,7 @@
 @import "index";
 @import "vinos";
 @import "bodegas";
-@import "puntosdeventa";
+@import "instalaciones";
 @import "familia";
 @import "contacto";
 @import "responsive";
@@ -60,14 +60,13 @@ body {
 }
 
 
+
 /* Footer */
 
 footer {
   display: flex;
   flex-direction: row;
-  text-align: end;
-  text-orientation: sideways-right;
-  display: inline-block;
+  align-items: center;
   max-width: 100%;
   height: 100%; 
 }

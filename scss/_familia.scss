@@ -14,13 +14,16 @@ $doradosmoke: #9E9E5E;
     padding: 0 2rem; }
   
   .familiaPiat {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #f1f1f1;
     margin-bottom: 2rem; }
   
   .familiaPiat h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 2rem;
     color: #6B3442; }
   
@@ -30,6 +33,6 @@ $doradosmoke: #9E9E5E;
   .familiaPiat > div {
     padding: 2rem; }
   
-  .familiaPiat:nth-child(even) img {
-    order: 2; }
+/*   .familiaPiat:nth-child(even) img {
+    order: 2; } */
   
